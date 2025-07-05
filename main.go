@@ -58,10 +58,10 @@ func main() {
 		return
 	}
 
-	hn := termenv.String(fmt.Sprint("hn ")).Foreground(termenv.ANSIBlue)
-	kr := termenv.String(fmt.Sprint("kr ")).Foreground(termenv.ANSIRed)
-	os := termenv.String(fmt.Sprint("os ")).Foreground(termenv.ANSIGreen)
-	wm := termenv.String(fmt.Sprint("wm ")).Foreground(termenv.ANSICyan)
+	hn := termenv.String("hn ").Foreground(termenv.ANSIBlue)
+	kr := termenv.String("kr ").Foreground(termenv.ANSIRed)
+	os := termenv.String("os ").Foreground(termenv.ANSIGreen)
+	wm := termenv.String("wm ").Foreground(termenv.ANSICyan)
 
 	fmt.Println("  ／l、    ", os, getDistro())
 	fmt.Println("（ﾟ､ ｡ ７  ", wm, getWM())

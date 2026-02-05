@@ -38,7 +38,7 @@ func getWM() string {
 	}
 
 	processList := strings.Split(string(out), "\n")
-	wmList := []string{"i3", "openbox", "kwin_x11", "mutter", "xfwm4", "metacity", "compiz", "fluxbox", "bspwm", "awesome", "dwm"}
+	wmList := []string{"i3", "openbox", "kwin_x11", "mutter", "xfwm4", "metacity", "compiz", "fluxbox", "bspwm", "awesome", "dwm", "hyprland", "sway", "niri"}
 
 	for _, proc := range processList {
 		trimmedProc := strings.TrimSpace(proc)
@@ -64,7 +64,7 @@ func main() {
 	wm := termenv.String("wm ").Foreground(termenv.ANSICyan)
 
 	fmt.Println("  ／l、    ", os, getDistro())
-	fmt.Println("（ﾟ､ ｡ ７  ", wm, getWM())
+	fmt.Println("（ﾟ､ ｡ ７   ", wm, getWM())
 	fmt.Println(" l  ~ ヽ   ", kr, getKernelVersion())
 	fmt.Println(" じしf_,)ノ", hn, hostname)
 }

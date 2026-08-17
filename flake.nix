@@ -32,7 +32,7 @@
 	      "-w"
             ];
 
-            vendorHash = "sha256-GdV+7ccktqbsDwfNLBU8fEsOjtHXBKiqjn7m1lMFvUU=";
+            vendorHash = "sha256-8MC8oNnGpvWiofFv0qklA5jbcOcCGsU5TPtPXwvLf8Y=";
 
             meta = {
               description = "Simple & stupid fetch";

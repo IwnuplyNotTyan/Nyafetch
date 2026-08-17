@@ -58,13 +58,8 @@ func main() {
 		return
 	}
 
-	hn := termenv.String("hn ").Foreground(termenv.ANSIBlue)
-	kr := termenv.String("kr ").Foreground(termenv.ANSIRed)
-	os := termenv.String("os ").Foreground(termenv.ANSIGreen)
-	wm := termenv.String("wm ").Foreground(termenv.ANSICyan)
-
-	fmt.Println("  ／l、    ", os, getDistro())
-	fmt.Println("（ﾟ､ ｡ ７   ", wm, getWM())
-	fmt.Println(" l  ~ ヽ   ", kr, getKernelVersion())
-	fmt.Println(" じしf_,)ノ", hn, hostname)
+	fmt.Println("  ／l、    ", termenv.String("os ").Foreground(termenv.ANSIGreen), getDistro())
+	fmt.Println("（ﾟ､ ｡ ７   ", termenv.String("wm ").Foreground(termenv.ANSICyan), getWM())
+	fmt.Println(" l  ~ ヽ   ", termenv.String("kr ").Foreground(termenv.ANSIRed), getKernelVersion())
+	fmt.Println(" じしf_,)ノ", termenv.String("hn ").Foreground(termenv.ANSIBlue), hostname)
 }
